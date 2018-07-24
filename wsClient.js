@@ -2,8 +2,8 @@ const WebSocket = require('ws');
 
 exports.start = (startStream, endStream) => {
 
-  const ws = new WebSocket('ws://localhost:5000', {
-    origin: 'http://localhost:5000',
+  const ws = new WebSocket('ws://138.197.151.166:5000', {
+    origin: 'http://138.197.151.166:5000',
     headers: {
       'XDevice': 'RaspberryPi'
     }

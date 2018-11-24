@@ -1,16 +1,17 @@
 {
-  "name": "Baby_Monitor_Pi",
+  "name": "rtmpServer",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "node-media-server": "^1.4.7"
+  },
+  "devDependencies": {},
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "shelljs": "^0.8.2",
-    "ws": "^6.0.0"
-  }
+  "license": "ISC"
 }

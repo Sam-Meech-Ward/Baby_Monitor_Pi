@@ -27,7 +27,7 @@ module.exports.start = function(rtmpURL) {
   };
 
   const picamCreate = function() {
-    const picam = spawn('sh', ['-c', '~/picam/picam --alsadev hw:1,0 -w 1408 -h 792 --fps 24 --rotation 180 --tcpout tcp://127.0.0.1:8181']);
+    const picam = spawn('sh', ['-c', '/home/pi/picam/picam --alsadev hw:1,0 -w 1408 -h 792 --fps 24 --rotation 180 --tcpout tcp://127.0.0.1:8181']);
     
     picam.stdout.on('data', (data) => {
       console.log(`stdout: ${data}`);
